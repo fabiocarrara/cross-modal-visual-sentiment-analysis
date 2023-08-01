@@ -1,7 +1,7 @@
 # The Emotions of the Crowd: Learning Image Sentiment from Tweets via Cross-modal Distillation
+[![arXiv](https://img.shields.io/badge/arXiv-2304.14942-b31b1b.svg)](https://arxiv.org/abs/2304.14942)
 
 ![Method Overview](https://fabiocarrara.github.io/cross-modal-visual-sentiment-analysis/static/images/overview.png)
-
 
 ## Introduction
 This work introduced a cross-modal learning method to train visual models for **Sentiment Analysis in the Twitter domain**.
