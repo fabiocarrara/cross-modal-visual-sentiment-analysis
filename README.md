@@ -33,7 +33,117 @@ The latter can help future research to train robust visual models, as the number
 ### Fine tune FI on the five split, get the mean accuracy, the standard deviation and save the predictions (by default use the boosted_model)
     $ python3 scripts/fine_tune_FI.py
     
-## Data and Trained Models
+## Trained Models
+
+<table style="text-align: center;">
+  <tr>
+    <th colspan="2"></th>
+    <th colspan="3">Confidence Filter Threshold</th>
+    <th colspan="1"></th>
+    <th colspan="3">Accuracy on Twitter Dataset (TD)</th>
+  </tr>
+  <tr>
+    <th>Label</th>
+    <th>Dataset</th>
+    <th>Pos</th>
+    <th>Neu</th>
+    <th>Neg</th>
+    <th>Student Arch</th>
+    <th>5 agree</th>
+    <th>$\ge$ 4 agree</th>
+    <th>$\ge$ 3 agree</th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/fabiocarrara/cross-modal-visual-sentiment-analysis/releases/download/v0.1.0/B-T4SA_1.0_upd.h5">Model 3.1</a></td>
+    <td>A</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>B/32</td>
+    <td>82.2</td>
+    <td>78.0</td>
+    <td>75.5</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/fabiocarrara/cross-modal-visual-sentiment-analysis/releases/download/v0.1.0/B-T4SA_1.0_upd_filt.h5">Model 3.2</a></td>
+    <td>A</td>
+    <td>0.70</td>
+    <td>0.70</td>
+    <td>0.70</td>
+    <td>B/32</td>
+    <td>84.7</td>
+    <td>79.7</td>
+    <td>76.6</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/fabiocarrara/cross-modal-visual-sentiment-analysis/releases/download/v0.1.0/bal_flat_T4SA2.0.h5">Model 3.3</a></td>
+    <td>B</td>
+    <td>0.70</td>
+    <td>0.70</td>
+    <td>0.70</td>
+    <td>B/32</td>
+    <td>82.3</td>
+    <td>78.7</td>
+    <td>75.3</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/fabiocarrara/cross-modal-visual-sentiment-analysis/releases/download/v0.1.0/bal_T4SA2.0.h5">Model 3.4</a></td>
+    <td>B</td>
+    <td>0.90</td>
+    <td>0.90</td>
+    <td>0.70</td>
+    <td>B/32</td>
+    <td>84.4</td>
+    <td>80.3</td>
+    <td>77.1</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/fabiocarrara/cross-modal-visual-sentiment-analysis/releases/download/v0.1.0/ViT_B32.h5">Model 3.5</a></td>
+    <td>A+B</td>
+    <td>0.90</td>
+    <td>0.90</td>
+    <td>0.70</td>
+    <td>B/32</td>
+    <td>86.5</td>
+    <td>82.6</td>
+    <td>78.9</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/fabiocarrara/cross-modal-visual-sentiment-analysis/releases/download/v0.1.0/ViT_L32.h5">Model 3.6</a></td>
+    <td>A+B</td>
+    <td>0.90</td>
+    <td>0.90</td>
+    <td>0.70</td>
+    <td>L/32</td>
+    <td>85.0</td>
+    <td>82.4</td>
+    <td>79.4</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/fabiocarrara/cross-modal-visual-sentiment-analysis/releases/download/v0.1.0/ViT_B16.h5">Model 3.7</a></td>
+    <td>A+B</td>
+    <td>0.90</td>
+    <td>0.90</td>
+    <td>0.70</td>
+    <td>B/16</td>
+    <td>87.0</td>
+    <td>83.1</td>
+    <td>79.4</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/fabiocarrara/cross-modal-visual-sentiment-analysis/releases/download/v0.1.0/ViT_L16.h5">Model 3.8</a></td>
+    <td>A+B</td>
+    <td>0.90</td>
+    <td>0.90</td>
+    <td>0.70</td>
+    <td>L/16</td>
+    <td>87.8</td>
+    <td>84.8</td>
+    <td>81.9</td>
+  </tr>
+</table>
+
+## Data
 COMING SOON
 
 ## BibTeX
