@@ -1,3 +1,5 @@
+#!/bin/bash
+
 apt-get update
 /usr/bin/python3 -m pip install --upgrade pip
 pip install tensorflow==2.8
