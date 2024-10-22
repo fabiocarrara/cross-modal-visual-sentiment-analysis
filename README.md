@@ -1,5 +1,5 @@
 # The Emotions of the Crowd: Learning Image Sentiment from Tweets via Cross-modal Distillation
-[![arXiv](https://img.shields.io/badge/arXiv-2304.14942-b31b1b.svg)](https://arxiv.org/abs/2304.14942)
+[![arXiv](https://img.shields.io/badge/arXiv-2304.14942-b31b1b.svg)](https://arxiv.org/abs/2304.14942) | [Website](https://fabiocarrara.github.io/cross-modal-visual-sentiment-analysis/)
 
 ![Method Overview](https://fabiocarrara.github.io/cross-modal-visual-sentiment-analysis/static/images/overview.png)
 
@@ -148,10 +148,17 @@ COMING SOON
 
 ## BibTeX
 ```bibtex
-@article{serra2023emotions,
-    author    = {Serra, Alessio and Carrara, Fabio and Tesconi, Maurizio and Falchi, Fabrizio},
-    title     = {The Emotions of the Crowd: Learning Image Sentiment from Tweets via Cross-modal Distillation},
-    journal   = {ECAI},
-    year      = {2023},
+@inproceedings{serra2023emotions,
+  author    = {Serra, Alessio and Carrara, Fabio and Tesconi, Maurizio and Falchi, Fabrizio},
+  editor       = {Kobi Gal and Ann Now{\'{e}} and Grzegorz J. Nalepa and Roy Fairstein and Roxana Radulescu},
+  title        = {The Emotions of the Crowd: Learning Image Sentiment from Tweets via Cross-Modal Distillation},
+  booktitle    = {{ECAI} 2023 - 26th European Conference on Artificial Intelligence, September 30 - October 4, 2023, Krak{\'{o}}w, Poland - Including 12th Conference on Prestigious Applications of Intelligent Systems ({PAIS} 2023)},
+  series       = {Frontiers in Artificial Intelligence and Applications},
+  volume       = {372},
+  pages        = {2089--2096},
+  publisher    = {{IOS} Press},
+  year         = {2023},
+  url          = {https://doi.org/10.3233/FAIA230503},
+  doi          = {10.3233/FAIA230503},
 }
 ```
