@@ -36,13 +36,13 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-<!--
-      <a class="navbar-item" href="#">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
--->
+      <!--
+        <a class="navbar-item" href="#">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+        </a>
+      -->
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           Related Research
@@ -223,9 +223,50 @@
 
 <!-- Teaser. -->
 <section class="hero teaser">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">Method</h2>
+    <div class="content has-text-justified">
+      <p>Our method boils down to the following three steps:
+        <ol>
+          <li>
+            <strong>Training Data Collection</strong>
+            <div class="hero-body">
+              <p>We collect and deduplicate multimodal (text + images) data from public social media posts.</p>
+              <img src="./static/images/step1.png" alt="Step 1: Training Data Collection" class="teaser-image">
+            </div>
+          </li>
+          <li>
+            <strong>Cross-modal Distillation</strong>
+            <div class="hero-body">
+              <p>We perform cross-modal knowledge distillation from a frozen textual teacher model to a student visual model using coupled (text, images) samples.</p>
+              <img src="./static/images/step2.png" alt="Step 2: Cross-modal Distillation" class="teaser-image">
+            </div>
+          </li>
+          <li>
+            <strong>Evaluation Phase</strong>
+            <div class="hero-body">
+              <p>We evaluate the trained visual model on visual-only sentiment analysis.</p>
+              <img src="./static/images/step3.png" alt="Step 2: Evaluation" class="teaser-image">
+            </div>
+          </li>
+        </ol>
+    </div>
+  </div>
+</section>
+
+<!-- Predictions. -->
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/overview.png" alt="Teaser" class="teaser-image">
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <h2 class="title is-3">Examples</h2>
+        <div class="content has-text-justified">
+          <div class="hero-body">
+            <img src="./static/images/samples.png" alt="Step 2: Evaluation" class="teaser-image"><br><br>
+            <caption>Cherry-picked examples of predictions of our best model (ViT-L/16) on the Twitter Dataset benchmark. The first two rows contain correctly classified images with positive and negative sentiment polarity, respectively. The third row contains negative-labeled samples misclassified as positives, and the last row contains positive-labeled ones misclassified as negatives. Note that several misclassified samples appear ambiguous even to a human labeler due to personal sensibility.</caption>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
